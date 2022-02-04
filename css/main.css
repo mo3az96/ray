@@ -568,7 +568,7 @@ input[type=number] {
 
 .mo-panel {
   display: none;
-  padding: 0 15px 0;
+  padding: 15px 15px 0;
 }
 
 .mo-accordion {
@@ -2158,6 +2158,103 @@ header.fixed-header.fixsedt {
   font-weight: 700;
   margin: 34px 0 0;
   text-align: center;
+}
+
+.aboutus-section {
+  padding: 50px 0 233px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1199px) {
+  .aboutus-section {
+    padding: 40px 0;
+    background: #f3fbf7;
+  }
+}
+
+.aboutus-section::after {
+  position: absolute;
+  bottom: -0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  content: "";
+  background-image: url(../images/Projects/curve.svg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+@media (max-width: 1199px) {
+  .aboutus-section::after {
+    display: none;
+  }
+}
+
+.aboutus-title {
+  font-size: 29px;
+  font-weight: 700;
+  color: #4FA935;
+  margin: 0 0 37px;
+}
+
+@media (max-width: 767px) {
+  .aboutus-title {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+}
+
+.aboutus-desc {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0;
+  color: #000000;
+}
+
+.aboutus-section .aboutus-desc {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .aboutus-section .aboutus-desc {
+    text-align: justify;
+    text-align-last: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutus-desc {
+    text-align: justify;
+    text-align-last: center;
+  }
+}
+
+.aboutus-cont {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1600px) {
+  .aboutus-cont {
+    margin: 0 140px;
+  }
+}
+
+.aboutus-cont ~ .aboutus-cont {
+  margin-top: 60px;
+}
+
+.goal-vision-section {
+  padding: 0 0 227px;
+}
+
+@media (max-width: 1199px) {
+  .goal-vision-section {
+    padding: 70px 0;
+  }
 }
 
 footer {
