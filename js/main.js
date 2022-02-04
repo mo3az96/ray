@@ -167,4 +167,13 @@ $(document).ready(function () {
         });
         $("body").removeClass("overflow");
     })
+
+
+    if ($(window).width() > 1200) {
+        var scene = $('#scene').get(0);
+        var parallaxInstance = new Parallax(scene);
+    }
+    if ($(window).width() <= 1199) {
+        $(".investments-imgs-cont").unwrap();
+    }
 });
