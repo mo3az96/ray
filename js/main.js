@@ -3,6 +3,24 @@ $(window).on('load', function () {
     sal();
 });
 $(document).ready(function () {
+    var prevScroll = $(window).scrollTop();
+
+    //////////** header **//////////
+    if ($(this).scrollTop() >= 150) {
+        $("header").addClass("fixed-header");
+    } else {
+        $("header").removeClass("fixed-header");
+    }
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= 150) {
+            $("header").addClass("fixed-header");
+        } else {
+            $("header").removeClass("fixed-header");
+        }
+        var currentScroll = $(window).scrollTop();
+        prevScroll < currentScroll && prevScroll > 0 ? $("header").removeClass("fixsedt") : $("header").addClass("fixsedt"),
+            prevScroll = currentScroll
+    });
     ///////// ** projects slider ** /////////
     var projectswiper = new Swiper('.projects-slider .swiper-container', {
         loop: true,

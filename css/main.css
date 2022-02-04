@@ -353,7 +353,7 @@ input[type=number] {
 @media (max-width: 767px) {
   .float-cancel {
     left: 15px;
-    top: 15px;
+    top: 30px;
     -webkit-transform: none;
             transform: none;
   }
@@ -530,7 +530,7 @@ input[type=number] {
 
 .header-nav a::after {
   position: absolute;
-  bottom: -37px;
+  bottom: -38px;
   background-color: #4FA935;
   left: -10px;
   right: -10px;
@@ -550,6 +550,20 @@ input[type=number] {
 
 .header-nav a.active::after {
   display: block;
+}
+
+.fixed-header .header-nav a {
+  color: #000000;
+}
+
+@media (max-width: 991px) {
+  .fixed-header .header-nav a {
+    color: #fff;
+  }
+}
+
+.fixed-header .header-nav a:hover, .fixed-header .header-nav a:focus {
+  color: #85D280;
 }
 
 .mo-panel {
@@ -753,6 +767,20 @@ header {
   left: 0;
   right: 0;
   z-index: 9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header.fixed-header {
+  top: -110px;
+  -webkit-box-shadow: 0px 4px 60px #0000000D;
+          box-shadow: 0px 4px 60px #0000000D;
+  background-color: #fff;
+}
+
+header.fixed-header.fixsedt {
+  position: fixed;
+  top: 0;
 }
 
 .header {
@@ -774,6 +802,22 @@ header {
   }
 }
 
+@media (max-width: 767px) {
+  .header {
+    padding: 10px 0;
+  }
+}
+
+.fixed-header .header {
+  padding: 10px 0;
+}
+
+@media (min-width: 1600px) {
+  .fixed-header .header {
+    padding: 10px 38px;
+  }
+}
+
 .logo {
   width: 146px;
   display: block;
@@ -781,6 +825,34 @@ header {
 
 .logo img {
   max-width: 100%;
+}
+
+.logo img.black-logo {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 120px;
+  }
+}
+
+.fixed-header .logo {
+  width: 130px;
+}
+
+@media (max-width: 767px) {
+  .fixed-header .logo {
+    width: 100px;
+  }
+}
+
+.fixed-header .logo img {
+  display: none;
+}
+
+.fixed-header .logo img.black-logo {
+  display: block;
 }
 
 .head-anchor {
@@ -856,6 +928,19 @@ header {
   opacity: 1;
 }
 
+.fixed-header .share-circle {
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.fixed-header .share-circle::after {
+  visibility: visible;
+  opacity: 1;
+}
+
 .menu-btn {
   display: none;
   background-color: transparent;
@@ -878,6 +963,10 @@ header {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.fixed-header .menu-btn {
+  stroke: #000000;
 }
 
 .section-title {
