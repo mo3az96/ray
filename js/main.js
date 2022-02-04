@@ -1,25 +1,21 @@
 $(window).on('load', function () {
     $("body").removeClass("overflow");
-   
-    if ($(window).width() > 991) {
-        sal();
-    }
-    if ($(window).width() <= 991) {
-        $("*").removeAttr("data-sal");
-        $("*").removeAttr("data-sal-delay");
-    }
+    wow = new WOW({
+        mobile: false
+    })
+    wow.init();
 });
 $(document).ready(function () {
     var prevScroll = $(window).scrollTop();
 
     //////////** header **//////////
-    if ($(this).scrollTop() >= 150) {
+    if ($(this).scrollTop() >= 500) {
         $("header").addClass("fixed-header");
     } else {
         $("header").removeClass("fixed-header");
     }
     $(window).scroll(function () {
-        if ($(this).scrollTop() >= 150) {
+        if ($(this).scrollTop() >= 500) {
             $("header").addClass("fixed-header");
         } else {
             $("header").removeClass("fixed-header");
