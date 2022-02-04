@@ -1,6 +1,13 @@
 $(window).on('load', function () {
     $("body").removeClass("overflow");
-    sal();
+   
+    if ($(window).width() > 991) {
+        sal();
+    }
+    if ($(window).width() <= 991) {
+        $("*").removeAttr("data-sal");
+        $("*").removeAttr("data-sal-delay");
+    }
 });
 $(document).ready(function () {
     var prevScroll = $(window).scrollTop();
