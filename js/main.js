@@ -168,12 +168,24 @@ $(document).ready(function () {
         $("body").removeClass("overflow");
     })
 
-
-    if ($(window).width() > 1200) {
-        var scene = $('#scene').get(0);
-        var parallaxInstance = new Parallax(scene);
+    ///////// ** investments ** /////////
+    if ($(".investments-imgs-cont").length > 0) {
+        if ($(window).width() > 1200) {
+            var scene = $('#scene').get(0);
+            var parallaxInstance = new Parallax(scene);
+        }
+        if ($(window).width() <= 1199) {
+            $(".investments-imgs-cont").unwrap();
+        }
     }
-    if ($(window).width() <= 1199) {
-        $(".investments-imgs-cont").unwrap();
+    ///////// ** select ** /////////
+    if ($(window).width() > 992) {
+        $("select.form-control").select2()
     }
+    $(".input-file").change(function () {
+        var file = $('.input-file')[0].files[0]
+        if (file) {
+            $(this).siblings(".file-pre").find(".input-text").html(file.name);
+        }
+    });
 });
