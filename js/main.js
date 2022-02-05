@@ -188,4 +188,10 @@ $(document).ready(function () {
             $(this).siblings(".file-pre").find(".input-text").html(file.name);
         }
     });
+    $(".inline-file input").change(function () {
+        var file = $('.inline-file input')[0].files[0]
+        if (file) {
+            $(this).siblings(".input-pre").find("span").html(file.name).addClass("active");
+        }
+    });
 });
