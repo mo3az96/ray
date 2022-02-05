@@ -3557,6 +3557,46 @@ header.fixed-header.fixsedt {
   z-index: 2;
 }
 
+.blackpage-title {
+  text-align: center;
+  font-size: 33px;
+  font-weight: 700;
+  color: #4FA935;
+  margin: 0 0 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.blackpage-title img {
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 991px) {
+  .blackpage-title {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+}
+
 .how-cont {
   padding-top: 50px;
 }
@@ -3839,46 +3879,6 @@ header.fixed-header.fixsedt {
 
 .target-cont {
   margin-top: 33px;
-}
-
-.accelerator-title {
-  text-align: center;
-  font-size: 33px;
-  font-weight: 700;
-  color: #4FA935;
-  margin: 0 0 47px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-}
-
-.accelerator-title img {
-  position: absolute;
-  bottom: -14px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-@media (max-width: 991px) {
-  .accelerator-title {
-    font-size: 26px;
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 30px;
-    overflow: hidden;
-  }
 }
 
 .target-grid {
@@ -4362,6 +4362,320 @@ header.fixed-header.fixsedt {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+}
+
+.investors-cont {
+  position: relative;
+  z-index: 5;
+  padding: 85px 0;
+}
+
+@media (min-width: 1600px) {
+  .investors-cont {
+    padding: 85px 135px;
+  }
+}
+
+@media (max-width: 991px) {
+  .investors-cont {
+    padding: 50px 0;
+  }
+}
+
+.investors-cont .page-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.investors-cont .first-div {
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.investors-cont .first-div p {
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.investors-cont .first-div::after {
+  content: url("../images/dash-border.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px auto 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .investors-cont .first-div::after {
+    margin-top: 40px;
+  }
+}
+
+.investors-cont .second-div {
+  padding-top: 25px;
+  overflow: hidden;
+}
+
+.investors-cont .second-div ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 68px 139px;
+}
+
+@media (max-width: 991px) {
+  .investors-cont .second-div ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.investors-cont .second-div ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.investors-cont .second-div ul li::before {
+  content: url("../images/Investors/list.svg");
+  margin-left: 22px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.investors-cont .second-div::after {
+  content: url("../images/dash-border.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 86px auto 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .investors-cont .second-div::after {
+    margin-top: 40px;
+  }
+}
+
+.investors-cont .third-div {
+  padding-top: 35px;
+  overflow: hidden;
+}
+
+.investors-cont .third-div::after {
+  content: url("../images/dash-border.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 60px auto 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .investors-cont .third-div::after {
+    margin-top: 40px;
+  }
+}
+
+.investors-cont .third-div ul {
+  margin: 0;
+}
+
+.investors-cont .third-div ul li {
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.investors-cont .third-div ul li ~ li {
+  margin-top: 19px;
+}
+
+@media (max-width: 767px) {
+  .investors-cont .third-div ul li {
+    margin-top: 19px;
+  }
+}
+
+.investors-cont .third-div ul li::before {
+  height: 7px;
+  width: 16px;
+  background-color: #4FA935;
+  content: "";
+  display: inline-block;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: 20px;
+  margin-left: 7px;
+}
+
+.investors-cont .why-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 881px;
+  margin: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .investors-cont .why-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.investors-cont .why-title {
+  font-size: 80px;
+  font-weight: 700;
+  color: #4FA935;
+  margin: 0;
+  margin-left: 15px;
+}
+
+@media (max-width: 991px) {
+  .investors-cont .why-title {
+    font-size: 30px;
+    margin: 0;
+  }
+}
+
+.investors-cont .fourth-div {
+  padding-top: 54px;
+  overflow: hidden;
+}
+
+.investors-cont .fourth-div::after {
+  content: url("../images/dash-border.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 53px auto 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .investors-cont .fourth-div::after {
+    margin-top: 40px;
+  }
+}
+
+.investors-cont .pros-list {
+  width: 968px;
+  max-width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 50px;
+}
+
+@media (max-width: 991px) {
+  .investors-cont .pros-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: unset;
+  }
+}
+
+.investors-cont .pros-list .item {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 991px) {
+  .investors-cont .pros-list .item ~ .item {
+    margin-top: 20px;
+  }
+}
+
+.investors-cont .pros-list .item .item-num {
+  font-size: 61px;
+  font-weight: 700;
+  margin-left: 15px;
+  color: #4FA935;
+}
+
+.investors-cont .pros-list .item .item-name {
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
 }
 
 footer {
