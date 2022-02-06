@@ -4687,7 +4687,7 @@ footer {
 
 @media (max-width: 991px) {
   footer {
-    padding: 40px 0;
+    padding: 40px 0 80px;
   }
 }
 
@@ -4837,6 +4837,13 @@ footer {
 @media (max-width: 1199px) {
   .copyrights {
     margin-top: 25px;
+  }
+}
+
+@media (max-width: 991px) {
+  .copyrights {
+    margin: 25px auto 0;
+    width: 270px;
   }
 }
 
