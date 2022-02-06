@@ -1395,9 +1395,7 @@ header.fixed-header.fixsedt {
 
 @media (max-width: 991px) {
   .menu-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
   }
 }
 
