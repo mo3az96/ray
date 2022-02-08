@@ -3690,15 +3690,23 @@ header.fixed-header.fixsedt {
   opacity: 0.34;
   max-width: 100%;
   z-index: 1;
+  height: 100%;
 }
 
 .blackpage-cont .pattern {
   position: fixed;
   bottom: 0;
   max-width: 100%;
-  max-height: calc(100vh - 100px);
+  /* max-height: calc(100vh - 100px); */
   left: 6%;
-  z-index: 2;
+  z-index: 9;
+  display: none;
+}
+
+@media (min-width: 1600px) {
+  .blackpage-cont .pattern {
+    display: block;
+  }
 }
 
 .blackpage-title {
