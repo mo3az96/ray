@@ -3699,7 +3699,7 @@ header.fixed-header.fixsedt {
   max-width: 100%;
   /* max-height: calc(100vh - 100px); */
   left: 6%;
-  z-index: 9;
+  z-index: 2;
   display: none;
 }
 
@@ -4469,6 +4469,9 @@ header.fixed-header.fixsedt {
 
 .step .step-num {
   margin-left: 15px;
+  fill: #433f3f;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .step .step-name {
@@ -4514,6 +4517,10 @@ header.fixed-header.fixsedt {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+}
+
+.step:hover .step-num {
+  fill: #4FA935;
 }
 
 .investors-cont {
@@ -4821,6 +4828,14 @@ header.fixed-header.fixsedt {
   font-weight: 700;
   margin-left: 15px;
   color: #4FA935;
+}
+
+@media (max-width: 767px) {
+  .investors-cont .pros-list .item .item-num {
+    width: 38px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
 }
 
 .investors-cont .pros-list .item .item-name {
