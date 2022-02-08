@@ -2956,13 +2956,12 @@ header.fixed-header.fixsedt {
 
 @media (max-width: 1199px) {
   .investment-item {
-    width: 100%;
+    margin: auto;
   }
 }
 
 @media (max-width: 991px) {
   .investment-item {
-    width: 100%;
     margin: auto;
   }
 }
@@ -2998,7 +2997,7 @@ header.fixed-header.fixsedt {
           justify-content: center;
   text-align: center;
   width: 100%;
-  aspect-ratio: 1;
+  height: 288px;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -3192,7 +3191,7 @@ header.fixed-header.fixsedt {
 .investment-item .desc-img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  aspect-ratio: 1;
+  height: 200px;
   width: 200px;
 }
 
