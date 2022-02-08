@@ -169,15 +169,15 @@ $(document).ready(function () {
     })
 
     ///////// ** investments ** /////////
-    if ($(".investments-imgs-cont").length > 0) {
-        if ($(window).width() > 1200) {
-            var scene = $('#scene').get(0);
-            var parallaxInstance = new Parallax(scene);
-        }
-        if ($(window).width() <= 1199) {
-            $(".investments-imgs-cont").unwrap();
-        }
-    }
+    // if ($(".investments-imgs-cont").length > 0) {
+    //     if ($(window).width() > 1200) {
+    //         var scene = $('#scene').get(0);
+    //         var parallaxInstance = new Parallax(scene);
+    //     }
+    //     if ($(window).width() <= 1199) {
+    //         $(".investments-imgs-cont").unwrap();
+    //     }
+    // }
     ///////// ** select ** /////////
     if ($(window).width() > 992) {
         $("select.form-control").select2()
@@ -194,4 +194,19 @@ $(document).ready(function () {
             $(this).siblings(".input-pre").find("span").html(file.name).addClass("active");
         }
     });
+    if ($(window).width() < 1200 && $(window).width() > 767) {
+        $('.investment-item').click(function () {
+            $(this).find(".item-desc").toggleClass("active");
+        })
+    }
+    if ($(window).width() < 767) {
+        $('.investment-item').click(function () {
+            if ($(this).find(".item-desc").css('display') == 'none') {
+                $(this).find(".item-desc").slideDown(500);
+            } else {
+                $(this).find(".item-desc").slideUp(500);
+            }
+            $(".investment-item").not(this).find(".item-desc").slideUp(500);
+        })
+    }
 });
